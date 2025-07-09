@@ -1,0 +1,58 @@
+/* src/index.css */
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  /* REMOVED: Animated Gradient Background properties */
+  /* background: linear-gradient(135deg, #e0f2f7, #c8e6c9, #bbdefb, #f0f4c3); */
+  /* background-size: 400% 400%; */
+  /* animation: gradientAnimation 15s ease infinite; */
+
+  /* NEW: Clean, solid background color */
+  background-color: #f0f2f5; /* A very light, subtle gray */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* REMOVED: The @keyframes rule as it's no longer used for the background */
+/* @keyframes gradientAnimation {
+  0% { background-position: 0% 0%; }
+  25% { background-position: 100% 0%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+  100% { background-position: 0% 0%; }
+} */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Keep your existing styles below this for tree-wrapper, tree-container, etc. */
+#tree-wrapper {
+  width: 100%;
+  height: 800px;
+  margin-top: 2rem;
+  border: 1px solid #ccc;
+  background-color: white; /* Ensures tree-wrapper remains white */
+  overflow: auto;
+}
+
+#tree-container {
+  background: #ffffff; /* Ensures tree-container remains white */
+  border: 1px solid #ccc;
+  margin-top: 2rem;
+}
+
+/* ... (rest of your index.css content) ... */
