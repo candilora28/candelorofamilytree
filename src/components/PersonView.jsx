@@ -193,7 +193,7 @@ const goToPrevImage = useCallback(() => {
 if (isEmpty) return null;
 
   return (
-    <div style={{ padding: '1rem 2rem', width: '100%' }}>
+    <div style={{ padding: '0.5rem 1rem', width: '100%' }}>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', justifyContent: 'center', alignItems: 'stretch' }}>
         <div style={{ flex: 1, minWidth: '380px', display: 'flex', flexDirection: 'column' }}>
           <div style={{ display: 'flex', alignItems: 'flex-start', width: '100%' }}>
@@ -202,7 +202,7 @@ if (isEmpty) return null;
               <img
                 src={mainPhotoUrl}
                 alt={`${name} profile`}
-                style={{ width: '100%', borderRadius: '8px', aspectRatio: '1/1', objectFit: 'cover', cursor: 'pointer', marginBottom: '0.5rem' }}
+                style={{ width: '85%', borderRadius: '8px', aspectRatio: '1/1', objectFit: 'cover', cursor: 'pointer', marginBottom: '0.5rem' }}
                onClick={(e) => {
   e.stopPropagation();
   setShowProfileModal(true);
@@ -214,31 +214,44 @@ if (isEmpty) return null;
             </div>
             <div style={{ flex: '1 1 auto', minWidth: '150px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start' }}>
               <div>
-                <h2>{name}</h2>
+                <h2 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>{name}</h2>
                 <p><strong>Gender:</strong> {gender}</p>
                 <p><strong>Born:</strong> {birthDate || '?'}</p> {/* Now correctly displays '?' if dob is 'Unknown' */}
                 <p><strong>Died:</strong> {deathStatus}</p>
               </div>
               {person.extra?.sources && person.extra.sources.length > 0 && (
-                <div style={{ marginTop: '1rem', width: '100%' }}>
-                  <h3>Sources</h3>
-                  <ul style={{ listStyleType: 'none', padding: 0 }}>
-                    {person.extra.sources.map((source, idx) => (
-                      <li key={idx} style={{ marginBottom: '0.5rem' }}>
-                        <a href={source.url} target="_blank" rel="noopener noreferrer" style={{ color: '#007bff', textDecoration: 'underline' }}>
-                          {source.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+  <div style={{ marginTop: '0.5rem', fontSize: '0.85rem' }}>
+    <h4 style={{ marginBottom: '0.25rem' }}>Sources:</h4>
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+      {person.extra.sources.map((source, idx) => (
+        <a
+          key={idx}
+          href={source.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: '#007bff',
+            textDecoration: 'underline',
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            maxWidth: '160px'
+          }}
+          title={source.name}
+        >
+          {source.name.length > 25 ? source.name.slice(0, 25) + '…' : source.name}
+        </a>
+      ))}
+    </div>
+  </div>
+)}
+
             </div>
           </div>
         </div>
 
         <div style={{ flex: 1, minWidth: '380px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <h3 style={{ marginBottom: '0.5rem', textAlign: 'center', width: '100%' }}>Other Media</h3>
+          <h3 style={{ textAlign: 'center', width: '100%' }}>Other Media</h3>
           {galleryPhotos.length > 0 ? (
             <div style={{ display: 'flex', flexWrap: 'nowrap', overflowX: 'auto', height: '350px', gap: '0.5rem', justifyContent: 'flex-start', alignItems: 'center', paddingBottom: '10px', boxSizing: 'border-box', width: '100%' }}>
               {(galleryPhotos || []).map((photo, i) => {
@@ -249,7 +262,7 @@ if (isEmpty) return null;
                     key={i}
                     src={thumbnailUrl}
                     alt={altText}
-                    style={{ width: '320px', height: '320px', flexShrink: 0, borderRadius: '6px', objectFit: 'cover', cursor: 'pointer' }}
+                    style={{ width: '240px', height: '240px', flexShrink: 0, borderRadius: '6px', objectFit: 'cover', cursor: 'pointer' }}
                     onClick={() => {
                       openImageModal(i);
                     }}
@@ -289,14 +302,13 @@ if (isEmpty) return null;
         </div>
       </div>
 
-      <div style={{ marginTop: '2rem', width: '100%' }}>
+      {/* <div style={{ marginTop: '1rem', width: '100%' }}>
         <h3>Timeline</h3>
         <div style={{ display: 'flex', overflowX: 'auto', gap: '1rem', padding: '0.5rem 0', whiteSpace: 'nowrap' }}>
-          {/* Modified Birth and Death display to use birthDate and deathStatus directly from component state */}
           {birthDate !== 'Unknown' && <div style={{ background: '#fff', padding: '1rem', borderRadius: '6px', minWidth: '200px', boxShadow: '0 1px 4px rgba(0,0,0,0.2)' }}><strong>Birth</strong><br /><span>{birthDate}{person?.pob && ` in ${person.pob}`}</span></div>}
           {deathStatus !== 'Living' && deathStatus !== 'Unknown' && <div style={{ background: '#fff', padding: '1rem', borderRadius: '6px', minWidth: '200px', boxShadow: '0 1px 4px rgba(0,0,0,0.2)' }}><strong>Death</strong><br /><span>{deathStatus}{person?.pod && ` in ${person.pod}`}</span></div>}
         </div>
-      </div>
+      </div> */}
 
 {activeImageIndex !== null && (
   <div

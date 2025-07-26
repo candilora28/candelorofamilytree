@@ -50,7 +50,7 @@ code {
 }
 
 #tree-container {
-  background: #ffffff; /* Ensures tree-container remains white */
+  background: #5a5a5a; /* Ensures tree-container remains white */
   border: 1px solid #ccc;
   margin-top: 2rem;
 }

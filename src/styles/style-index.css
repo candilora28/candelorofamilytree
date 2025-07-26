@@ -17,7 +17,7 @@
 }
 .dtree-container .linage {
     fill: none;
-    stroke: limegreen !important; /* Make lines bright green */
+    stroke: rgb(156, 156, 156) !important; /* Make lines bright green */
     stroke-width: 5px !important; /* Make lines very thick */
     /* Check for other conflicting properties if still invisible */
     /* For example, if you find display: none; or visibility: hidden; remove them */
@@ -64,6 +64,29 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
     background-color: #fff; /* Default white background for card */
 }
+
+.person-card.focused {
+  border: 6px solid #d5d80b;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(184, 193, 15, 0.5);
+  animation: pulse 2s infinite;
+  z-index: 10;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(238, 255, 0, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
+}
+
+
 
 .card-header {
     height: 60%; /* Adjust as needed for image proportion */

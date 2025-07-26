@@ -11,21 +11,9 @@ window._ = _;
 
 const getActualImageUrl = (mediaItem) => {
   if (mediaItem && mediaItem.url) {
-    const localBasePath = "C:/Users/kcsup/Documents/test_media".replace(/\\/g, '/');
-    const rawPath = mediaItem.url.replace(/\\/g, '/');
-
-    // Remove the local base from the GEDCOM path
-    let relativePath = rawPath.startsWith(localBasePath)
-      ? rawPath.substring(localBasePath.length)
-      : rawPath;
-
-    // Remove leading slashes
-    relativePath = relativePath.replace(/^\/+/, '');
-
-    // Final output
-    return `${import.meta.env.BASE_URL}photos/${relativePath}`;
+    const filename = mediaItem.url.split(/[\\/]/).pop(); // grab filename
+    return `${import.meta.env.BASE_URL}photos/${filename}`;
   }
-
   return placeholderImage;
 };
 
@@ -43,6 +31,7 @@ export default function TreeView({ data, focusId, onNodeClick, treeHeight, onExp
         }
 
         treeInstanceRef.current = dTree.init(data, {
+            
             target: ref.current,
             debug: false,
             height: treeHeight || 800,
@@ -158,7 +147,7 @@ export default function TreeView({ data, focusId, onNodeClick, treeHeight, onExp
                 height: treeHeight ? `${treeHeight}px` : '800px',
                 width: '100%',
                 border: '1px solid #ddd',
-                backgroundColor: '#f9f9f9',
+                backgroundColor: '#5a5a5a',
                 overflow: 'auto'
             }}
         />
