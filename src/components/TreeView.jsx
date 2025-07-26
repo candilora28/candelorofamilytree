@@ -34,6 +34,7 @@ export default function TreeView({ data, focusId, onNodeClick, treeHeight, onExp
             
             target: ref.current,
             debug: false,
+            initialScale: 0.7,
             height: treeHeight || 800,
             width: ref.current.clientWidth,
             nodeWidth: 150,
