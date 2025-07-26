@@ -20,12 +20,7 @@ const getSex = (person) => {
 // Removed old getBirth/getDeath logic, relying on formatted dates from App.jsx's processIndividualData
 // The person object now comes with dob/dod already formatted as 'DD MMM YYYY' or '?' / 'Living'
 
-const formatGeneration = (gen) => {
-  if (gen === 1) return 'Parents';
-  if (gen === 2) return 'Grandparents';
-  const suffix = ['th', 'st', 'nd', 'rd'][((gen - 1) % 10)] || 'th';
-  return `${gen - 1}${suffix} Great Grandparents`;
-};
+
 
 const getMediaDetail = (mediaItem, tag) => {
     if (tag === 'TITL' && mediaItem.caption) {
@@ -48,15 +43,17 @@ const getMediaDetail = (mediaItem, tag) => {
 
 
 const PersonView = ({ person, lineage }) => {
-  if (!person) return null;
+  const isEmpty = !person;
+  
+
+
 
   const name = getName(person);
   const gender = getSex(person);
   const birthDate = person?.dob; // Directly use person.dob, which is now pre-formatted
   const deathStatus = person?.dod; // Directly use person.dod, which is now pre-formatted
 
-  const birthPlace = person?.pob;
-  const deathPlace = person?.pod;
+ 
 
   const [activeImageIndex, setActiveImageIndex] = useState(null);
   const [globalZoom, setGlobalZoom] = useState(1);
@@ -89,23 +86,27 @@ const PersonView = ({ person, lineage }) => {
 
   const photos = person.extra?.media || [];
 
-  const getActualImageUrl = useCallback((mediaItem) => {
-    if (mediaItem && mediaItem.url) {
-      let localBasePath = "C:\\Users\\kcsup\\Documents\\test_media";
-      let rawFilePath = mediaItem.url;
-      if (!localBasePath.endsWith('\\')) localBasePath += '\\';
-      
-      let relativePath = rawFilePath;
-      if (rawFilePath.startsWith(localBasePath)) {
-        relativePath = rawFilePath.substring(localBasePath.length);
-      }
-      relativePath = relativePath.replace(/\\/g, '/');
-      
-      const publicWebBaseUrl = '/photos/';
-      return `${publicWebBaseUrl}${relativePath}`;
-    }
-    return placeholderImage;
-  }, []);
+ const getActualImageUrl = (mediaItem) => {
+  if (mediaItem && mediaItem.url) {
+    const localBasePath = "C:/Users/kcsup/Documents/test_media".replace(/\\/g, '/');
+    const rawPath = mediaItem.url.replace(/\\/g, '/');
+
+    // Remove the local base from the GEDCOM path
+    let relativePath = rawPath.startsWith(localBasePath)
+      ? rawPath.substring(localBasePath.length)
+      : rawPath;
+
+    // Remove leading slashes
+    relativePath = relativePath.replace(/^\/+/, '');
+
+    // Final output
+    return `${import.meta.env.BASE_URL}photos/${relativePath}`;
+  }
+
+  return placeholderImage;
+};
+
+
 
   const formattedPhotos = photos.map(photo => {
     const isPrimaryNode = photo.tree?.find(node => node.tag === '_PRIM');
@@ -150,7 +151,8 @@ const PersonView = ({ person, lineage }) => {
         modalElement.removeEventListener('wheel', handleModalWheel);
       }
     };
-  }, [activeImageIndex !== null]);
+  },  [activeImageIndex]);
+
 
   useEffect(() => {
   const profileElement = profileModalRef.current;
@@ -188,7 +190,7 @@ const goToPrevImage = useCallback(() => {
   );
 }, [galleryPhotos.length]);
 
-
+if (isEmpty) return null;
 
   return (
     <div style={{ padding: '1rem 2rem', width: '100%' }}>
@@ -440,9 +442,13 @@ const goToPrevImage = useCallback(() => {
       &times;
     </button>
   </div>
+  
 )}
 
 
   </div>
+  
 )}
+
+
 export default PersonView;

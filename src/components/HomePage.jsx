@@ -1,5 +1,7 @@
 // src/components/HomePage.jsx
 import React, { useState } from 'react';
+import candlemas from '/src/assets/candlemas.webp';
+import spoltoreMap from '/src/assets/spoltore-map.jpg';
 
 function HomePage({ onSearchSubmit, onSampleTreeClick, onGoToGiovanni, showNoResultsMessage }) {
   const [localQuery, setLocalQuery] = useState('');
@@ -124,7 +126,7 @@ function HomePage({ onSearchSubmit, onSampleTreeClick, onGoToGiovanni, showNoRes
             The name Candeloro stems from the "Candelora" celebration (Candlemas in English), a Christian feast commemorating the presentation of Jesus at the Temple. This tradition often involved candle-lit processions. The surname likely originated as a reference to a family associated with this tradition, perhaps candle makers, or those living near a church dedicated to this feast.
           </p>
           
-          <img src="/src/assets/candlemas.webp" alt="Candlemas Celebration" style={{ width: '100%', borderRadius: '8px', marginTop: '1rem' }} />
+          <img src={candlemas} alt="Candlemas Celebration" style={{ width: '100%', borderRadius: '8px', marginTop: '1rem' }} />
         </div>
 
         {/* Our Family is From Spoltore Section */}
@@ -145,7 +147,7 @@ function HomePage({ onSearchSubmit, onSampleTreeClick, onGoToGiovanni, showNoRes
             <li><strong>Abruzzo:</strong> Known as the "Green Region of Europe," Abruzzo is famous for its national parks, mountains (Apennines), and a rugged coastline. It's a region rich in history, folklore, and delicious cuisine.</li>
           </ul>
           <h4 style={{marginTop: '1.5rem', marginBottom: '0.5rem', color: '#444'}}>Map of Abruzzo with Spoltore Highlighted:</h4>
-          <img src="/src/assets/spoltore-map.jpg" alt="spoltore" style={{ width: '100%', borderRadius: '8px', marginTop: '1rem' }} />
+          <img src={spoltoreMap} alt="spoltore" style={{ width: '100%', borderRadius: '8px', marginTop: '1rem' }} />
         </div>
       </div>
 

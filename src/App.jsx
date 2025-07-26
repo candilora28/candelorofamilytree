@@ -6,36 +6,11 @@ import HomePage from './components/HomePage';
 import SearchResultsModal from './components/SearchResultsModal';
 
 // Place this helper function at the top of your App.jsx file
-function deepCloneWithCycles(obj, map = new WeakMap()) {
-    if (obj === null || typeof obj !== 'object') {
-        return obj;
-    }
-    if (map.has(obj)) {
-        return map.get(obj);
-    }
 
-    let clone;
-    if (Array.isArray(obj)) {
-        clone = [];
-        map.set(obj, clone);
-        for (let i = 0; i < obj.length; i++) {
-            clone[i] = deepCloneWithCycles(obj[i], map);
-        }
-    } else {
-        clone = {};
-        map.set(obj, clone);
-        for (const key in obj) {
-            if (Object.prototype.hasOwnProperty.call(obj, key)) {
-                clone[key] = deepCloneWithCycles(obj[key], map);
-            }
-        }
-    }
-    return clone;
-}
 
 function App() {
-    const individuals = rawTree.nodes || [];
-    const families = rawTree.families || [];
+    const individuals = useMemo(() => rawTree.nodes || [], []);
+    const families = useMemo(() => rawTree.families || [], []);
 
     const formatDate = useCallback((dateString) => {
         if (!dateString || dateString.trim() === '' || dateString.trim() === '?') return '?';
@@ -52,7 +27,9 @@ function App() {
                 const year = dateObj.getUTCFullYear();
                 return `${day} ${month} ${year}`;
             }
-        } catch (e) { /* ignore */ }
+        } catch {
+  // do nothing
+}
         return dateString;
     }, []);
 
@@ -299,7 +276,7 @@ function App() {
 
         lineage.onSelect = handleSetPerson;
         return lineage;
-    }, [findById, findFamilyByPointer, getParentsOfIndividual, getName, extractFamilyDetails, handleSetPerson]);
+    }, [findById, findFamilyByPointer, getParentsOfIndividual, extractFamilyDetails, getName, handleSetPerson]);
 
     const lineage = useMemo(() => getRelatives(person), [person, getRelatives]);
     
@@ -410,7 +387,7 @@ const focusedTreeData = useMemo(() => {
         setShowNoResultsMessage(matches.length === 0);
         if (matches.length === 1) { handleSetPerson(matches[0]); setSearchResults([]); }
         else if (matches.length > 1) setSearchResults(matches);
-    }, [processedIndividuals, getName, handleSetPerson]);
+    }, [processedIndividuals, handleSetPerson]);
     
     const handleSelectSearchResult = useCallback((p) => { handleSetPerson(p); setSearchResults([]); }, [handleSetPerson]);
     const handleCloseSearchResults = useCallback(() => setSearchResults([]), []);

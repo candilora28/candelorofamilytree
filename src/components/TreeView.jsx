@@ -10,20 +10,25 @@ window.d3 = d3;
 window._ = _;
 
 const getActualImageUrl = (mediaItem) => {
-    if (mediaItem && mediaItem.url) {
-        let localBasePath = "C:/Users/kcsup/documents/test_media";
-        const publicWebBaseUrl = '/photos/';
-        let rawFilePath = mediaItem.url.replace(/\\/g, '/');
-        localBasePath = localBasePath.replace(/\\/g, '/');
-        if (!localBasePath.endsWith('/')) localBasePath += '/';
-        let relativePath = rawFilePath.toLowerCase().startsWith(localBasePath.toLowerCase())
-            ? rawFilePath.substring(localBasePath.length)
-            : rawFilePath;
-        if (!relativePath.startsWith('/') && publicWebBaseUrl.endsWith('/')) relativePath = '/' + relativePath;
-        return `${publicWebBaseUrl}${relativePath.replace(/\/\/+/g, '/')}`;
-    }
-    return placeholderImage;
+  if (mediaItem && mediaItem.url) {
+    const localBasePath = "C:/Users/kcsup/Documents/test_media".replace(/\\/g, '/');
+    const rawPath = mediaItem.url.replace(/\\/g, '/');
+
+    // Remove the local base from the GEDCOM path
+    let relativePath = rawPath.startsWith(localBasePath)
+      ? rawPath.substring(localBasePath.length)
+      : rawPath;
+
+    // Remove leading slashes
+    relativePath = relativePath.replace(/^\/+/, '');
+
+    // Final output
+    return `${import.meta.env.BASE_URL}photos/${relativePath}`;
+  }
+
+  return placeholderImage;
 };
+
 
 export default function TreeView({ data, focusId, onNodeClick, treeHeight, onExpandFocus, onExpandSpouse, expandedSpouses, showFocusAncestors }) {
     const ref = useRef();
