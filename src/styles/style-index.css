@@ -1,0 +1,262 @@
+/* style-index.css */
+
+
+.dtree-container h1 {
+	color: white;
+}
+.dtree-container #graph {
+	cursor: grab;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+.dtree-container #graph:active {
+	cursor: grabbing;
+}
+.dtree-container .nodeText {
+	text-align: center;
+}
+.dtree-container .linage {
+    fill: none;
+    stroke: rgb(156, 156, 156) !important; /* Make lines bright green */
+    stroke-width: 5px !important; /* Make lines very thick */
+    /* Check for other conflicting properties if still invisible */
+    /* For example, if you find display: none; or visibility: hidden; remove them */
+    display: block !important;
+    visibility: visible !important;
+}
+.dtree-container .marriage {
+    fill: none;
+    stroke: magenta !important; /* Make marriage lines bright magenta */
+    stroke-width: 5px !important; /* Make lines very thick */
+    display: block !important;
+    visibility: visible !important;
+}
+.dtree-container .marriageNode {
+	background-color: black;
+	border-radius: 50%;
+}
+.dtree-container .nthMarriage {
+	fill: none;
+	stroke: #2e2c2e;
+	stroke-width: 1px;
+	stroke-dasharray: 3,3;
+}
+
+/* Base styling for elements that dTree attaches to nodes (foreignObject > div) */
+.dtree-container foreignObject > div {
+    display: flex;
+    flex-direction: column; /* Stack header and content vertically */
+    border-radius: 5px; /* Rounded corners for the whole card */
+    overflow: hidden; /* Important to clip content within rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    justify-content: unset; /* Override previous center alignment */
+    align-items: unset;   /* Override previous center alignment */
+}
+
+/* New styles for the custom person cards */
+.person-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Make card fill its foreignObject */
+    width: 100%;
+    border-radius: 5px; /* Inherit from parent or set explicitly */
+    overflow: hidden; /* Ensure rounded corners are applied */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
+    background-color: #fff; /* Default white background for card */
+}
+
+.person-card.focused {
+  border: 6px solid #d5d80b;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(184, 193, 15, 0.5);
+  animation: pulse 2s infinite;
+  z-index: 10;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(238, 255, 0, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
+}
+
+
+
+.card-header {
+    height: 60%; /* Adjust as needed for image proportion */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Small padding inside header */
+}
+
+/* Specific background colors for gender silhouettes based on Ancestry.com style */
+.card-header.male-silhouette {
+    background-color: #bcd5e0; /* Blueish tone for male */
+}
+
+.card-header.female-silhouette {
+    background-color: #e0bcd5; /* Pinkish tone for female */
+}
+
+.card-header.unknown-silhouette {
+    background-color: #ccc; /* Neutral for unknown gender */
+}
+
+.profile-silhouette {
+    width: 80%; /* Adjust size of the silhouette image */
+    height: auto;
+    max-height: 100%;
+    object-fit: contain; /* Ensure image fits without distortion */
+}
+
+.card-content {
+    flex: 1; /* Take remaining vertical space */
+    background-color: #fff; /* White background for text area */
+    padding: 8px; /* Padding around text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center text if space allows */
+    align-items: center;   /* Horizontally center text */
+    text-align: center;
+    border-top: 1px solid #eee; /* Separator line */
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.card-content p {
+    margin: 0; /* Remove default paragraph margins */
+    line-height: 1.2;
+}
+
+.person-name {
+    font-weight: bold;
+    font-size: 0.95rem;
+    white-space: normal; /* Allow name to wrap if too long */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 2; /* Standard property for line clamping */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* WebKit vendor prefix for line clamping */
+    -webkit-box-orient: vertical;
+}
+
+.person-lifetime {
+    font-size: 0.75rem;
+    color: #666;
+    white-space: nowrap; /* Prevent dates from wrapping */
+}
+
+/* Hover effects for the new person-card */
+.person-card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Enhanced shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    transition: all 0.2s ease-in-out; /* Smooth transition */
+}
+
+
+/* Original dTree classes that now primarily define hover effects or specific elements */
+/* No empty rulesets below this line */
+.dtree-container .man:hover {
+	background-color: hsl(0, 0%, 63%); /* Keep hover effect if applied to the entire node or its specific parts */
+}
+.dtree-container .woman:hover {
+	background-color: hsl(120, 73%, 55%); /* Keep hover effect */
+}
+.dtree-container .emphasis { /* Original dTree class */
+	font-style: italic;
+}
+.dtree-container .child:hover {
+    background-color: deepskyblue; /* Keep hover effect */
+}
+
+
+/* General SVG styling that was adjusted */
+.dtree-container svg {
+	border-style: none; /* Removed the 1px border around the entire SVG */
+	/* Ensure SVG uses full width and height of its container */
+	width: 100%;
+	height: 100%;
+    overflow: visible !important; /* Hide SVG internal scrollbars, relying on D3 zoom/pan */
+}
+
+/* Original foreignObject styles */
+.dtree-container foreignObject {
+	cursor: pointer;
+	/* height property is now managed dynamically by dTree.init and .person-card height:100% */
+	border: none; /* Removed border from foreignObject itself, card has its own border/shadow */
+}
+
+
+/* Remaining original dTree styles for info box etc. */
+.dtree-container div > p {
+	font-size: .75rem;
+	letter-spacing: -0.3px;
+}
+.dtree-container #head-info {
+	color: white;
+}
+.dtree-container #head-info a {
+	text-decoration-style: underline;
+	color: white;
+}
+.dtree-container #head-info a:hover {
+	color: lightgreen;
+	text-decoration-style: dashed;
+	text-decoration-color: lightgreen;
+	text-decoration-thickness: 3px;
+}
+.dtree-container .halfrem {
+	font-size: .5rem;
+}
+.dtree-container .info {
+	cursor: default;
+	width: 250px;
+	height: auto;
+	position: absolute;
+	padding: 1rem;
+	top: 170px;
+	left: 30px;
+	border: 1px solid black;
+	border-radius: 10px;
+	font-size: .9rem;
+}
+.dtree-container #close {
+	position: absolute;
+	color: black;
+	top: -11px;
+	right: -11px;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid black;
+	cursor:pointer;
+	font-size: 1.75rem;
+	line-height: .6;
+	text-align: center;
+}
+
+.modal-image-container {
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.modal-image-container img {
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.modal-image-container:hover img {
+  transform: scale(2);
+  cursor: zoom-out;
+}
