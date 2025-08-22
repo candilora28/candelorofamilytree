@@ -34,11 +34,11 @@ export default function TreeView({ data, focusId, onNodeClick, treeHeight, onExp
             
             target: ref.current,
             debug: false,
-            initialScale: 0.7,
+            initialScale: 0.25,
             height: treeHeight || 800,
             width: ref.current.clientWidth,
             nodeWidth: 150,
-            nodeHeight: 200, // RESTORED: Original node height
+            nodeHeight: 200,
             marriageNodeSize: 10,
             styles: {
                 node: "node",
@@ -136,6 +136,8 @@ export default function TreeView({ data, focusId, onNodeClick, treeHeight, onExp
                 }
             }
         });
+        
+
 
     }, [data, treeHeight, onNodeClick, onExpandFocus, onExpandSpouse, focusId, expandedSpouses, showFocusAncestors]);
 
@@ -149,7 +151,7 @@ export default function TreeView({ data, focusId, onNodeClick, treeHeight, onExp
                 width: '100%',
                 border: '1px solid #ddd',
                 backgroundColor: '#5a5a5a',
-                overflow: 'auto'
+                overflow: 'hidden'
             }}
         />
     );

@@ -193,13 +193,13 @@ const goToPrevImage = useCallback(() => {
 if (isEmpty) return null;
 
   return (
-    <div style={{ padding: '0.5rem 1rem', width: '100%' }}>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', justifyContent: 'center', alignItems: 'stretch' }}>
-        <div style={{ flex: 1, minWidth: '380px', display: 'flex', flexDirection: 'column' }}>
+    <div className="person-view-container" style={{ padding: '0.5rem 1rem', width: '100%' }}>
+      <div className="person-details-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', justifyContent: 'center', alignItems: 'flex-start' }}>
+        <div style={{ flex: 1, minWidth: '380px', display: 'flex', flexDirection: 'column', marginTop: '2rem' }}>
           <div style={{ display: 'flex', alignItems: 'flex-start', width: '100%' }}>
-            <div style={{ flex: '0 0 250px', minWidth: '200px', marginRight: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <h3 style={{ marginBottom: '0.5rem', textAlign: 'center', width: '100%' }}>Profile Photo</h3>
+            <div className="profile-photo-section" style={{ flex: '0 0 250px', minWidth: '200px', marginRight: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <img
+                className="profile-photo"
                 src={mainPhotoUrl}
                 alt={`${name} profile`}
                 style={{ width: '85%', borderRadius: '8px', aspectRatio: '1/1', objectFit: 'cover', cursor: 'pointer', marginBottom: '0.5rem' }}
@@ -253,7 +253,7 @@ if (isEmpty) return null;
         <div style={{ flex: 1, minWidth: '380px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <h3 style={{ textAlign: 'center', width: '100%' }}>Other Media</h3>
           {galleryPhotos.length > 0 ? (
-            <div style={{ display: 'flex', flexWrap: 'nowrap', overflowX: 'auto', height: '350px', gap: '0.5rem', justifyContent: 'flex-start', alignItems: 'center', paddingBottom: '10px', boxSizing: 'border-box', width: '100%' }}>
+            <div style={{ display: 'flex', flexWrap: 'nowrap', overflowX: 'auto', height: '200px', gap: '0.5rem', justifyContent: 'center', alignItems: 'center', paddingBottom: '10px', boxSizing: 'border-box', width: '100%' }}>
               {(galleryPhotos || []).map((photo, i) => {
                 const thumbnailUrl = photo.url;
                 const altText = photo.title || `Gallery Image ${i + 1}`;
@@ -262,7 +262,7 @@ if (isEmpty) return null;
                     key={i}
                     src={thumbnailUrl}
                     alt={altText}
-                    style={{ width: '240px', height: '240px', flexShrink: 0, borderRadius: '6px', objectFit: 'cover', cursor: 'pointer' }}
+                    style={{ width: '160px', height: '160px', flexShrink: 0, borderRadius: '6px', objectFit: 'cover', cursor: 'pointer' }}
                     onClick={() => {
                       openImageModal(i);
                     }}
@@ -278,27 +278,53 @@ if (isEmpty) return null;
           )}
         </div>
 
-        <div style={{ flex: 1, minWidth: '300px' }}>
-          <h3 style={{ marginBottom: '0.5rem', textAlign: 'center', width: '100%' }}>Relatives</h3>
-          {['Parents', 'Paternal Grandparents', 'Maternal Grandparents', 'Siblings', 'Spouse', 'Children'].map((key) => {
-            const relationData = lineage?.[key];
-            if (!relationData || (Array.isArray(relationData) && relationData.length === 0)) return null;
-            const itemsToRender = Array.isArray(relationData) ? relationData : [relationData];
-            const renderRelationItem = (relInfo, index, totalLength) => {
-              const currentPersonRel = getPersonFromLineageItem(relInfo);
-              if (!currentPersonRel) return null;
+        <div style={{ flex: 1, minWidth: '300px', maxWidth: '100%' }}>
+          <h3 style={{ marginBottom: '0.25rem', textAlign: 'center', width: '100%' }}>Relatives</h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+            {['Paternal Grandparents', 'Maternal Grandparents', 'Parents', 'Siblings', 'Spouse', 'Children'].map((key) => {
+              const relationData = lineage?.[key];
+              if (!relationData || (Array.isArray(relationData) && relationData.length === 0)) return null;
+              const itemsToRender = Array.isArray(relationData) ? relationData : [relationData];
+              const renderRelationItem = (relInfo, index, totalLength) => {
+                const currentPersonRel = getPersonFromLineageItem(relInfo);
+                if (!currentPersonRel) return null;
+                return (
+                  <span key={index}>
+                    <a 
+                      href="#" 
+                      onClick={(e) => { e.preventDefault(); lineage.onSelect(currentPersonRel); }}
+                      style={{ 
+                        color: '#007bff', 
+                        textDecoration: 'none',
+                        padding: '2px 4px',
+                        borderRadius: '3px',
+                        transition: 'background-color 0.2s'
+                      }}
+                      onMouseEnter={(e) => e.target.style.backgroundColor = '#f0f8ff'}
+                      onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}
+                    >
+                      {getName(relInfo)}{(key === 'Siblings' || key === 'Children') && getTypeFromLineageItem(relInfo) && ` (${getTypeFromLineageItem(relInfo)})`}
+                    </a>{index < totalLength - 1 && ', '}
+                  </span>
+                );
+              };
               return (
-                <span key={index}>
-                  <a href="#" onClick={(e) => { e.preventDefault(); lineage.onSelect(currentPersonRel); }}>
-                    {getName(relInfo)}{(key === 'Siblings' || key === 'Children') && getTypeFromLineageItem(relInfo) && ` (${getTypeFromLineageItem(relInfo)})`}
-                  </a>{index < totalLength - 1 && ', '}
-                </span>
+                <div key={key} style={{ 
+                  padding: '0.25rem', 
+                  backgroundColor: '#f8f9fa', 
+                  borderRadius: '4px',
+                  borderLeft: '3px solid #007bff'
+                }}>
+                  <div style={{ fontWeight: 'bold', fontSize: '0.8rem', marginBottom: '0.1rem', color: '#495057' }}>
+                    {key}:
+                  </div>
+                  <div style={{ fontSize: '0.8rem', lineHeight: '1.2' }}>
+                    {itemsToRender.map((relInfo, i) => renderRelationItem(relInfo, i, itemsToRender.length))}
+                  </div>
+                </div>
               );
-            };
-            return (
-              <p key={key}><strong>{key}:</strong> {itemsToRender.map((relInfo, i) => renderRelationItem(relInfo, i, itemsToRender.length))}</p>
-            );
-          })}
+            })}
+          </div>
         </div>
       </div>
 

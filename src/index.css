@@ -8,6 +8,9 @@ html, body, #root {
   display: flex;
   flex-direction: column;
 
+  /* Global scale factor to make the whole site smaller */
+  font-size: 14px; /* Reduced from default 16px */
+
   /* REMOVED: Animated Gradient Background properties */
   /* background: linear-gradient(135deg, #e0f2f7, #c8e6c9, #bbdefb, #f0f4c3); */
   /* background-size: 400% 400%; */
@@ -56,3 +59,171 @@ code {
 }
 
 /* ... (rest of your index.css content) ... */
+
+/* ===== MOBILE RESPONSIVE DESIGN ===== */
+
+/* Mobile-first approach - these styles apply to all screen sizes */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+/* Mobile styles (up to 768px) */
+@media (max-width: 768px) {
+  /* Global mobile adjustments */
+  html, body, #root {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+  
+  /* Search bar mobile optimization */
+  .search-container {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+  
+  .search-container input {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+  }
+  
+  .search-container button {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  
+  /* Tree view mobile optimization */
+  #tree-wrapper {
+    height: 50vh !important; /* Use viewport height instead of fixed pixels */
+    margin-top: 1rem !important;
+    overflow: auto !important; /* Ensure scrolling works */
+  }
+  
+  /* Person view mobile optimization */
+  .person-view-container {
+    padding: 0.5rem !important;
+    overflow-y: auto !important; /* Enable vertical scrolling */
+    max-height: 40vh !important; /* Limit height to allow tree view space */
+  }
+  
+  .person-details-grid {
+    display: flex !important;
+    flex-direction: column !important; /* Stack columns on mobile */
+    gap: 1rem !important;
+    align-items: center !important;
+  }
+  
+  .profile-photo-section {
+    text-align: center !important;
+    flex: none !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .profile-photo {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  
+  /* Fix mobile layout issues */
+  .person-details-grid > div {
+    min-width: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Ensure proper scrolling on mobile */
+  body {
+    overflow-y: auto !important;
+  }
+  
+  /* Fix tree container height on mobile */
+  #tree-container {
+    height: auto !important;
+    min-height: 50vh !important;
+  }
+  
+  /* Ensure the main app container allows scrolling on mobile */
+  .app-container {
+    overflow-y: auto !important;
+    height: auto !important;
+    min-height: 100vh !important;
+  }
+  
+  /* Fix the tree view height calculation on mobile */
+  .tree-view-container {
+    height: 50vh !important;
+    min-height: 300px !important;
+    overflow: auto !important;
+  }
+  
+  /* Relationship detector mobile optimization */
+  .relationship-section {
+    padding: 1rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .relationship-section h3 {
+    font-size: 1.2rem !important;
+  }
+  
+  .relationship-section p {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Homepage mobile optimization */
+  .homepage-container {
+    padding: 1rem !important;
+  }
+  
+  .homepage-container h1 {
+    font-size: 1.8rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .homepage-container h3 {
+    font-size: 1.3rem !important;
+  }
+  
+  .homepage-container p {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* Facts grid mobile optimization */
+  .facts-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    padding: 0 0.5rem !important;
+  }
+  
+  /* Navigation instructions mobile optimization */
+  .tree-navigation-instructions {
+    font-size: 0.8rem !important;
+    padding: 0.5rem !important;
+    margin-top: 0.5rem !important;
+  }
+}
+
+/* Tablet styles (768px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+  
+  .person-details-grid {
+    grid-template-columns: 1fr 2fr !important;
+  }
+  
+  .facts-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Desktop styles (above 1024px) - your current styles remain unchanged */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1200px;
+  }
+}

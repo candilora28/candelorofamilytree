@@ -8,8 +8,8 @@
 3 PHON 1-800-ROOTSMAGIC
 3 WWW www.RootsMagic.com
 1 DEST RootsMagic
-1 DATE 26 JUL 2025
-1 FILE root.ged
+1 DATE 22 AUG 2025
+1 FILE test.ged
 1 GEDC
 2 VERS 5.5.1
 2 FORM LINEAGE-LINKED
@@ -2265,6 +2265,7 @@
 2 DATE 13 JUN 2025
 1 DEAT Y
 1 FAMS @F29@
+1 FAMC @F131@
 0 @I99@ INDI
 1 NAME Maria /Petrozzia/
 2 GIVN Maria
@@ -6285,6 +6286,13 @@
 3 _TMPLT
 4 FIELD
 5 NAME Page
+1 OBJE
+2 FILE C:\Users\kcsup\Documents\test_media\Brody.jpg
+2 FORM jpg
+2 TITL Brody
+2 _TYPE PHOTO
+2 _SCBK N
+2 _PRIM Y
 1 FAMS @F69@
 1 FAMC @F9@
 0 @I238@ INDI
@@ -6451,6 +6459,13 @@
 3 _TMPLT
 4 FIELD
 5 NAME Page
+1 OBJE
+2 FILE C:\Users\kcsup\Documents\test_media\Carlton.jpg
+2 FORM jpg
+2 TITL Carlton
+2 _TYPE PHOTO
+2 _SCBK N
+2 _PRIM Y
 1 FAMC @F89@
 1 FAMC @F90@
 0 @I240@ INDI
@@ -6479,6 +6494,13 @@
 3 _TMPLT
 4 FIELD
 5 NAME Page
+1 OBJE
+2 FILE C:\Users\kcsup\Documents\test_media\Charly.jpg
+2 FORM jpg
+2 TITL Charly
+2 _TYPE PHOTO
+2 _SCBK N
+2 _PRIM Y
 1 FAMS @F71@
 1 FAMC @F89@
 1 FAMC @F90@
@@ -7188,7 +7210,17 @@
 2 _TYPE PHOTO
 2 _SCBK N
 2 _PRIM Y
+1 OBJE
+2 FILE C:\Users\kcsup\Documents\test_media\Rexanne Mackey (81E8E80A24DF49D3A4D16293A3AE2DEF).j2k
+2 FORM j2k
+2 TITL Rexanne Mackey
+2 NOTE Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Leh
+3 CONC i, UT, USA: Ancestry.com Operations, Inc., 2010.
+2 _TYPE PHOTO
+2 _SCBK N
+2 _PRIM Y
 1 FAMS @F73@
+1 FAMC @F141@
 0 @I266@ INDI
 1 NAME Debbi /Openshaw/
 2 GIVN Debbi
@@ -7407,8 +7439,16 @@
 2 _TYPE PHOTO
 2 _SCBK N
 2 _PRIM Y
+1 OBJE
+2 FILE C:\Users\kcsup\Documents\test_media\Chester Warren Green & Ellenor Dunn (0D8F253A651E40BAA1350DC6E09416CA).jpg
+2 FORM jpg
+2 TITL Chester Warren Green & Ellenor Dunn
+2 _TYPE PHOTO
+2 _SCBK N
+2 _PRIM Y
 1 FAMS @F78@
 1 FAMS @F128@
+1 FAMC @F133@
 0 @I274@ INDI
 1 NAME Ellenor /Dunn/
 2 GIVN Ellenor
@@ -7906,6 +7946,7 @@
 2 _TYPE PHOTO
 2 _SCBK N
 2 _PRIM N
+1 FAMS @F132@
 1 FAMC @F94@
 0 @I284@ INDI
 1 NAME Angela Dea /Candeloro/
@@ -9944,6 +9985,13 @@
 3 _TMPLT
 4 FIELD
 5 NAME Page
+1 OBJE
+2 FILE C:\Users\kcsup\Documents\test_media\kim2.jpg
+2 FORM jpg
+2 TITL kim2
+2 _TYPE PHOTO
+2 _SCBK N
+2 _PRIM Y
 1 FAMS @F88@
 1 FAMC @F89@
 0 @I309@ INDI
@@ -9989,6 +10037,13 @@
 3 _WEBTAG
 4 NAME U.S., Newspapers.com™ Birth Index, 1800s-2003
 4 URL https://www.newspapers.com/image/613639879/?article=8b620233-baa7-46c4-bdfa-5a85322bcd94&xid=5905&terms=Pond
+1 OBJE
+2 FILE C:\Users\kcsup\Documents\test_media\anna.jpg
+2 FORM jpg
+2 TITL anna
+2 _TYPE PHOTO
+2 _SCBK N
+2 _PRIM Y
 1 FAMS @F88@
 1 FAMC @F73@
 0 @I310@ INDI
@@ -10110,6 +10165,14 @@
 3 NAME City: Salt Lake City; State: Utah; Year(s): 1998-2002
 1 OBJE
 2 FILE C:\Users\kcsup\Documents\test_media\Kim Candilora Sr.png
+2 FORM png
+2 TITL Kim Candilora Sr.
+2 _DATE 2011
+2 _TYPE PHOTO
+2 _SCBK N
+2 _PRIM Y
+1 OBJE
+2 FILE C:\Users\kcsup\Documents\test_media\Kim Candilora Sr (AD04548909AF4D51A66DB60A18C9A730).png
 2 FORM png
 2 TITL Kim Candilora Sr.
 2 _DATE 2011
@@ -10297,6 +10360,15 @@
 5 NAME Page
 1 OBJE
 2 FILE C:\Users\kcsup\Documents\test_media\Lori Lee Candilora.j2k
+2 FORM j2k
+2 TITL Lori Lee Candilora
+2 NOTE Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Leh
+3 CONC i, UT, USA: Ancestry.com Operations, Inc., 2010.
+2 _TYPE PHOTO
+2 _SCBK N
+2 _PRIM Y
+1 OBJE
+2 FILE C:\Users\kcsup\Documents\test_media\Lori Lee Candilora (143B33C93DC54C3C8374F80D919467E2).j2k
 2 FORM j2k
 2 TITL Lori Lee Candilora
 2 NOTE Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Leh
@@ -10709,6 +10781,13 @@
 2 FILE C:\Users\kcsup\Documents\test_media\Merle Green.jpg
 2 FORM jpg
 2 TITL Merle Green
+2 _TYPE PHOTO
+2 _SCBK N
+2 _PRIM Y
+1 OBJE
+2 FILE C:\Users\kcsup\Documents\test_media\merle.jpg
+2 FORM jpg
+2 TITL merle
 2 _TYPE PHOTO
 2 _SCBK N
 2 _PRIM Y
@@ -11928,7 +12007,7 @@
 1 _UID 701A99C9CA02414EAA60A4011BA8EC42E73A
 1 _AMTID 142664802699:1030:203275906
 1 CHAN
-2 DATE 14 JUN 2025
+2 DATE 22 AUG 2025
 1 BIRT
 2 DATE 20 SEP 1932
 2 PLAC Salt Lake City, Utah
@@ -13584,7 +13663,16 @@
 2 _TYPE PHOTO
 2 _SCBK N
 2 _PRIM N
+1 OBJE
+2 FILE C:\Users\kcsup\Documents\test_media\ Loretta Costello (6454916511584DDAB70CEED345AA21EE).jpg
+2 FORM jpg
+2 TITL Loretta Costello
+2 _DATE 13 OCT 1955
+2 _TYPE PHOTO
+2 _SCBK N
+2 _PRIM Y
 1 FAMS @F72@
+1 FAMC @F140@
 0 @I354@ INDI
 1 NAME Autie /Costello/
 2 GIVN Autie
@@ -14310,6 +14398,613 @@
 4 NAME Geneanet Community Trees Index
 4 URL https://gw.geneanet.org/boyle403tina?n=monteforte&oc=&p=angeline
 1 FAMS @F104@
+0 @I358@ INDI
+1 NAME Susan /Barkdull/
+2 GIVN Susan
+2 SURN Barkdull
+2 SOUR @S53@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1977
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1977
+3 NAME "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1977
+3 _WEBTAG
+4 URL https://www.classmates.com/yearbooks/?page=1&s=81166&utm_source=ancestry&utm_medium=unpaid&utm_campaign=partnerships&utm_term=yearbook&utm_content=81166
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\sid_5107_1977_0215.jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+2 SOUR @S53@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1979
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1979
+3 NAME "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1979
+3 _WEBTAG
+4 URL https://www.classmates.com/yearbooks/?page=1&s=81166&utm_source=ancestry&utm_medium=unpaid&utm_campaign=partnerships&utm_term=yearbook&utm_content=81166
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\sid_5107_1979_0194.jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+1 SEX F
+1 _UID CF35C3E9E627416AB1A89FA9253541610580
+1 _AMTID 142689207815:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE ABT 1961
+2 SOUR @S53@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1977
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1977
+3 NAME "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1977
+3 _WEBTAG
+4 URL https://www.classmates.com/yearbooks/?page=1&s=81166&utm_source=ancestry&utm_medium=unpaid&utm_campaign=partnerships&utm_term=yearbook&utm_content=81166
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\sid_5107_1977_0215.jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+2 SOUR @S53@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1979
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1979
+3 NAME "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1979
+3 _WEBTAG
+4 URL https://www.classmates.com/yearbooks/?page=1&s=81166&utm_source=ancestry&utm_medium=unpaid&utm_campaign=partnerships&utm_term=yearbook&utm_content=81166
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\sid_5107_1979_0194.jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+1 RESI
+2 DATE 1977
+2 PLAC Kaysville, Utah, USA
+2 SOUR @S53@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1977
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1977
+3 NAME "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1977
+3 _WEBTAG
+4 URL https://www.classmates.com/yearbooks/?page=1&s=81166&utm_source=ancestry&utm_medium=unpaid&utm_campaign=partnerships&utm_term=yearbook&utm_content=81166
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\sid_5107_1977_0215.jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+1 RESI
+2 DATE 1979
+2 PLAC Kaysville, Utah, USA
+2 SOUR @S53@
+3 PAGE "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1979
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1979
+3 NAME "U.S., School Yearbooks, 1880-2012"; School Name: Davis High School; Year: 1979
+3 _WEBTAG
+4 URL https://www.classmates.com/yearbooks/?page=1&s=81166&utm_source=ancestry&utm_medium=unpaid&utm_campaign=partnerships&utm_term=yearbook&utm_content=81166
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\sid_5107_1979_0194.jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+1 OBJE
+2 FILE C:\Users\kcsup\Documents\test_media\Susie Smith.jpg
+2 FORM jpg
+2 TITL Susie Smith
+2 NOTE Ancestry.com. U.S., School Yearbooks, 1900-2016 [database on-line]. Leh
+3 CONC i, UT, USA: Ancestry.com Operations, Inc., 2010.
+2 _TYPE PHOTO
+2 _SCBK N
+2 _PRIM Y
+1 FAMS @F135@
+0 @I359@ INDI
+1 NAME María Guadalupe /Bello Fernández/
+2 GIVN María Guadalupe
+2 SURN Bello Fernández
+1 SEX F
+1 _UID 6C4B8C0F065E4224BB2345AA478EC9921961
+1 _AMTID 142687695267:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE 1953
+1 FAMS @F145@
+0 @I360@ INDI
+1 NAME Emidio /Castellucci/
+2 GIVN Emidio
+2 SURN Castellucci
+1 SEX M
+1 _UID 95AE5F28834946B4903B5675D1A32DA86FAC
+1 _AMTID 142689183965:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE 1771
+1 DEAT
+2 DATE 6 JAN 1841
+2 PLAC Sora, Frosinone, Lazio, Italie
+1 FAMS @F131@
+0 @I361@ INDI
+1 NAME Antonieta /Di Santi Pessolato/
+2 GIVN Antonieta
+2 SURN Di Santi Pessolato
+1 SEX F
+1 _UID 370D66121FB448D4B0C88262B14E94059FEE
+1 _AMTID 142687693389:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 DEAT Y
+1 FAMS @F144@
+1 FAMC @F132@
+0 @I362@ INDI
+1 NAME Carlos /Di Santi/
+2 GIVN Carlos
+2 SURN Di Santi
+1 SEX M
+1 _UID 069752FB85F54C7FA8EA6313A9D8E86D0D66
+1 _AMTID 142687693192:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 DEAT Y
+1 FAMS @F132@
+0 @I363@ INDI
+1 NAME Maria /DiVona/
+2 GIVN Maria
+2 SURN DiVona
+1 SEX F
+1 _UID 889304B708474AC58AA0EE8EB2F9A5E40EC9
+1 _AMTID 142689183731:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE ABT 1808–1811
+1 DEAT Y
+1 FAMS @F143@
+0 @I364@ INDI
+1 NAME Benigna /Gemmiti/
+2 GIVN Benigna
+2 SURN Gemmiti
+1 SEX F
+1 _UID 09DBF15089B248D6A6DF14F4C6293CFB3196
+1 _AMTID 142689184347:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE 1780
+1 DEAT
+2 DATE 29 OCT 1857
+2 PLAC Sora, Frosinone, Lazio, Italie
+1 FAMS @F131@
+0 @I365@ INDI
+1 NAME David Oscar /Green/
+2 GIVN David Oscar
+2 SURN Green
+1 SEX M
+1 _UID 1E95A5ED97F34D4596A8E56A68C93F9AF869
+1 _AMTID 142689349021:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 DEAT Y
+1 FAMS @F137@
+1 FAMC @F134@
+0 @I366@ INDI
+1 NAME George William /Green/
+2 GIVN George William
+2 SURN Green
+1 SEX M
+1 _UID 89C91D25F669411AA62ADDB61EEBFF752E0B
+1 _AMTID 142689349081:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 DEAT Y
+1 FAMS @F133@
+1 FAMS @F134@
+0 @I367@ INDI
+1 NAME Mark K /Green/
+2 GIVN Mark K
+2 SURN Green
+1 SEX M
+1 _UID 5CB155A00BC546729488035BB1C419B446C5
+1 _AMTID 142689208146:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 DEAT
+2 DATE 1979
+1 FAMS @F135@
+1 FAMC @F138@
+0 @I368@ INDI
+1 NAME Murphy /Green/
+2 GIVN Murphy
+2 SURN Green
+1 SEX M
+1 _UID 05B26B7842374D5F938EA5E83D102520FFEC
+1 _AMTID 142689200855:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 FAMC @F136@
+0 @I369@ INDI
+1 NAME Rohin /Green/
+2 GIVN Rohin
+2 SURN Green
+1 SEX M
+1 _UID 257A1F7CEE0D446694C7395CF27B9BE8BFF3
+1 _AMTID 142689200823:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 FAMC @F136@
+0 @I370@ INDI
+1 NAME Shane M /Green/
+2 GIVN Shane M
+2 SURN Green
+1 SEX M
+1 _UID F5C71D176E4B43548AD8EFEBB48B02DD9A68
+1 _AMTID 142689200869:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 FAMS @F136@
+1 FAMC @F135@
+0 @I371@ INDI
+1 NAME Woodrow Evans /Green/
+2 GIVN Woodrow Evans
+2 SURN Green
+1 SEX M
+1 _UID 1A66882346E94D1F88B8BB4DE809C7581E01
+1 _AMTID 142689348992:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 DEAT Y
+1 FAMS @F138@
+1 FAMC @F137@
+0 @I372@ INDI
+1 NAME Giovanni /LaPosta/
+2 GIVN Giovanni
+2 SURN LaPosta
+1 SEX M
+1 _UID 0D7CB85C838544EAAF84CE76077CE75C107D
+1 _AMTID 142689184697:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE ABT 1784
+1 DEAT
+2 DATE BEF 1879
+1 FAMS @F139@
+0 @I373@ INDI
+1 NAME Giuseppe /LaPosta/
+2 GIVN Giuseppe
+2 SURN LaPosta
+1 SEX M
+1 _UID 87ADA128361E4A20B5664643BA5B56ECB635
+1 _AMTID 142689182960:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE ABT 1830
+1 DEAT Y
+1 FAMS @F140@
+1 FAMC @F139@
+0 @I374@ INDI
+1 NAME Lillian Stromberg /Mackay/
+2 GIVN Lillian Stromberg
+2 SURN Mackay
+2 SOUR @S54@
+3 PAGE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 NAME Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\42675_b159639-01466.jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+1 SEX F
+1 _UID 13CA36DBC5AD4B798F5680DB64A1FEE84F63
+1 _AMTID 142689200674:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 DEAT
+2 PLAC Utah, USA
+2 SOUR @S54@
+3 PAGE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 NAME Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\42675_b159639-01466.jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+1 FAMS @F141@
+0 @I375@ INDI
+1 NAME Rex /Mackay/
+2 GIVN Rex
+2 SURN Mackay
+2 SOUR @S55@
+3 PAGE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 NAME Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\42675_b159639-01466 (42675_b159639-01466).jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+1 SEX M
+1 _UID 898CBCB5C7CA44BA8547446A5D50A6351719
+1 _AMTID 142689200729:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE ABT 1936
+2 PLAC Salt Lake City, Salt Lake, Utah, USA
+2 SOUR @S55@
+3 PAGE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 NAME Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\42675_b159639-01466 (42675_b159639-01466).jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+1 DEAT
+2 DATE 4 DEC 1960
+2 PLAC Davis, Utah, USA
+2 SOUR @S55@
+3 PAGE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 NAME Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\42675_b159639-01466 (42675_b159639-01466).jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+1 FAMS @F141@
+1 FAMC @F142@
+0 @I376@ INDI
+1 NAME Ruby /Mackay/
+2 GIVN Ruby
+2 SURN Mackay
+2 SOUR @S56@
+3 PAGE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 NAME Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\42675_b159639-01466 (42675_b159639-01466).jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+1 SEX F
+1 _UID 522DFCD6380A480395920C320C13A9F904FE
+1 _AMTID 142689347169:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 DEAT
+2 PLAC Utah, USA
+2 SOUR @S56@
+3 PAGE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 NAME Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\42675_b159639-01466 (42675_b159639-01466).jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+1 FAMS @F142@
+0 @I377@ INDI
+1 NAME Wallace D /Mackay/
+2 GIVN Wallace D
+2 SURN Mackay
+2 SOUR @S57@
+3 PAGE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 NAME Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\42675_b159639-01466 (42675_b159639-01466).jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+1 SEX M
+1 _UID 411180B0A3424117B9622651F4248B463A59
+1 _AMTID 142689347168:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 DEAT
+2 PLAC Utah, USA
+2 SOUR @S57@
+3 PAGE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 _TMPLT
+4 FIELD
+5 NAME Page
+5 VALUE Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 NAME Utah Division of Archives and Records Service; Salt Lake City, UT, USA; Death Certificates, 1904-1961; Series Number: 81448
+3 OBJE
+4 FILE C:\Users\kcsup\Documents\test_media\42675_b159639-01466 (42675_b159639-01466).jpg
+4 FORM jpg
+4 _TYPE PHOTO
+4 _SCBK N
+4 _PRIM N
+1 FAMS @F142@
+0 @I378@ INDI
+1 NAME Maria Felicia /Paradisi/
+2 GIVN Maria Felicia
+2 SURN Paradisi
+1 SEX F
+1 _UID 0EAD5345C1D14219ACDB44F970D88406D6B2
+1 _AMTID 142689183121:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE 8 JUN 1844
+2 PLAC Province Frosinone, Sora, Frosinone, Lazio, Italy
+1 DEAT Y
+1 FAMS @F140@
+1 FAMC @F143@
+0 @I379@ INDI
+1 NAME Pasquale /Paradisi/
+2 GIVN Pasquale
+2 SURN Paradisi
+1 SEX M
+1 _UID 172D2136ED0D4266816A444A2DAEB62C73C2
+1 _AMTID 142689183699:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE ABT 1799
+1 DEAT Y
+1 FAMS @F143@
+0 @I380@ INDI
+1 NAME José /Pessolano Di Santi/
+2 GIVN José
+2 SURN Pessolano Di Santi
+1 SEX M
+1 _UID C4E3838A8082444EADAC60E77D9C68B720E3
+1 _AMTID 142687695168:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE 1955
+1 FAMS @F145@
+1 FAMC @F144@
+0 @I381@ INDI
+1 NAME Antonio /Pessolato/
+2 GIVN Antonio
+2 SURN Pessolato
+1 SEX M
+1 _UID 7356CD7CD58A4F5FBB52BC4BE3EDF3C4BA05
+1 _AMTID 142687693449:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 DEAT Y
+1 FAMS @F144@
+0 @I382@ INDI
+1 NAME Carlos Cesar /Pessolato/
+2 GIVN Carlos Cesar
+2 SURN Pessolato
+1 SEX M
+1 _UID D0C25BAC6EE340A3B7C2EDF5FD35DA8ABE66
+1 _AMTID 142687695053:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE 1961
+2 PLAC Ipiranga, Sao Paulo, Brazil
+1 FAMC @F144@
+0 @I383@ INDI
+1 NAME Fabio /Pessolato/
+2 GIVN Fabio
+2 SURN Pessolato
+1 SEX M
+1 _UID 31043FE2949D4C2D90F0F4A0CB529E3100EB
+1 _AMTID 142690517712:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 FAMC @F146@
+0 @I384@ INDI
+1 NAME Vera /Pessolato/
+2 GIVN Vera
+2 SURN Pessolato
+1 SEX F
+1 _UID E328DE41131344C79610AC3DACF79681A4F0
+1 _AMTID 142687695570:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE 1953
+2 PLAC Ipiranga, Sao Paulo, Brazil
+1 DEAT Y
+1 FAMS @F146@
+1 FAMC @F144@
+0 @I385@ INDI
+1 NAME Bryan /Pond/
+2 GIVN Bryan
+2 SURN Pond
+1 SEX M
+1 _UID BAEA5CAE4B964F8A9D7A462DB2AE248F0586
+1 _AMTID 142689200756:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 FAMC @F73@
+0 @I386@ INDI
+1 NAME Megan /Pond/
+2 GIVN Megan
+2 SURN Pond
+1 SEX F
+1 _UID B0BC9DD64E5B41D38493104E01E3476AA6AE
+1 _AMTID 142689200785:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 FAMC @F73@
+0 @I387@ INDI
+1 NAME Rachel /Pond/
+2 GIVN Rachel
+2 SURN Pond
+1 SEX F
+1 _UID 9383240DDE8949F3AA3746212DC828F54499
+1 _AMTID 142689200763:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 FAMS @F136@
+1 FAMC @F73@
+0 @I388@ INDI
+1 NAME Maria /Venditti/
+2 GIVN Maria
+2 SURN Venditti
+1 SEX F
+1 _UID 73F6E41AB9F0453E938E9633F95F06815CCB
+1 _AMTID 142689184758:1030:203275906
+1 CHAN
+2 DATE 22 AUG 2025
+1 BIRT
+2 DATE ABT 1787
+1 DEAT Y
+1 FAMS @F139@
 0 @F1@ FAM
 1 HUSB @I7@
 1 WIFE @I34@
@@ -14894,6 +15589,9 @@
 1 HUSB @I264@
 1 WIFE @I265@
 1 CHIL @I309@
+1 CHIL @I385@
+1 CHIL @I386@
+1 CHIL @I387@
 1 MARR
 2 DATE 22 MAR 1980
 2 SOUR @S6@
@@ -15394,6 +16092,67 @@
 1 MARR
 2 DATE 22 JUN 1968
 2 PLAC San Diego City, California
+0 @F131@ FAM
+1 HUSB @I360@
+1 WIFE @I364@
+1 CHIL @I98@
+0 @F132@ FAM
+1 HUSB @I362@
+1 WIFE @I283@
+1 CHIL @I361@
+0 @F133@ FAM
+1 HUSB @I366@
+1 CHIL @I273@
+0 @F134@ FAM
+1 HUSB @I366@
+1 CHIL @I365@
+0 @F135@ FAM
+1 HUSB @I367@
+1 WIFE @I358@
+1 CHIL @I370@
+0 @F136@ FAM
+1 HUSB @I370@
+1 WIFE @I387@
+1 CHIL @I369@
+1 CHIL @I368@
+0 @F137@ FAM
+1 HUSB @I365@
+1 CHIL @I371@
+0 @F138@ FAM
+1 HUSB @I371@
+1 CHIL @I367@
+0 @F139@ FAM
+1 HUSB @I372@
+1 WIFE @I388@
+1 CHIL @I373@
+0 @F140@ FAM
+1 HUSB @I373@
+1 WIFE @I378@
+1 CHIL @I353@
+0 @F141@ FAM
+1 HUSB @I375@
+1 WIFE @I374@
+1 CHIL @I265@
+0 @F142@ FAM
+1 HUSB @I377@
+1 WIFE @I376@
+1 CHIL @I375@
+0 @F143@ FAM
+1 HUSB @I379@
+1 WIFE @I363@
+1 CHIL @I378@
+0 @F144@ FAM
+1 HUSB @I381@
+1 WIFE @I361@
+1 CHIL @I380@
+1 CHIL @I382@
+1 CHIL @I384@
+0 @F145@ FAM
+1 HUSB @I380@
+1 WIFE @I359@
+0 @F146@ FAM
+1 WIFE @I384@
+1 CHIL @I383@
 0 @S1@ SOUR
 1 ABBR 1940 United States Federal Census
 1 TITL Ancestry.com, <i>1940 United States Federal Census</i> (Provo, UT, USA: A
@@ -16711,11 +17470,204 @@
 3 NAME Title
 3 VALUE Ohio, U.S., Birth Index, 1908-2003
 1 REPO @R1@
+0 @S53@ SOUR
+1 ABBR U.S., School Yearbooks, 1900-2016
+1 TITL Ancestry.com, <i>U.S., School Yearbooks, 1900-2016</i> (Lehi, UT, USA: A
+2 CONC ncestry.com Operations, Inc., 2010).
+1 _SUBQ , <I>U.S., School Yearbooks, 1900-2016</i>.
+1 _BIBL , Ancestry.com. <i>U.S., School Yearbooks, 1900-2016</i>. Lehi, UT, USA
+2 CONC : Ancestry.com Operations, Inc., 2010.
+1 _TMPLT
+2 TID 439
+2 FIELD
+3 NAME Author
+3 VALUE Ancestry.com
+2 FIELD
+3 NAME Publisher
+3 VALUE Ancestry.com Operations, Inc.
+2 FIELD
+3 NAME PubPlace
+3 VALUE Lehi, UT, USA
+2 FIELD
+3 NAME PubDate
+3 VALUE 2010
+2 FIELD
+3 NAME Title
+3 VALUE U.S., School Yearbooks, 1900-2016
+1 REPO @R3@
+0 @S54@ SOUR
+1 ABBR Utah, U.S., Death and Military Death Certificates, 1904-1970
+1 TITL Ancestry.com, <i>Utah, U.S., Death and Military Death Certificates, 190
+2 CONC 4-1970</i> (Lehi, UT, USA: Ancestry.com Operations, Inc., 2014).
+1 _SUBQ , <I>Utah, U.S., Death and Military Death Certificates, 1904-1970</i>.
+1 _BIBL , Ancestry.com. <i>Utah, U.S., Death and Military Death Certificates, 1
+2 CONC 904-1970</i>. Lehi, UT, USA: Ancestry.com Operations, Inc., 2014.
+1 _TMPLT
+2 TID 439
+2 FIELD
+3 NAME Author
+3 VALUE Ancestry.com
+2 FIELD
+3 NAME Publisher
+3 VALUE Ancestry.com Operations, Inc.
+2 FIELD
+3 NAME PubPlace
+3 VALUE Lehi, UT, USA
+2 FIELD
+3 NAME PubDate
+3 VALUE 2014
+2 FIELD
+3 NAME Title
+3 VALUE Utah, U.S., Death and Military Death Certificates, 1904-1970
+1 REPO @R4@
+0 @S55@ SOUR
+1 ABBR Utah, U.S., Death and Military Death Certificates, 1904-1970
+1 TITL Ancestry.com, <i>Utah, U.S., Death and Military Death Certificates, 190
+2 CONC 4-1970</i> (Lehi, UT, USA: Ancestry.com Operations, Inc., 2014).
+1 _SUBQ , <I>Utah, U.S., Death and Military Death Certificates, 1904-1970</i>.
+1 _BIBL , Ancestry.com. <i>Utah, U.S., Death and Military Death Certificates, 1
+2 CONC 904-1970</i>. Lehi, UT, USA: Ancestry.com Operations, Inc., 2014.
+1 _TMPLT
+2 TID 439
+2 FIELD
+3 NAME Author
+3 VALUE Ancestry.com
+2 FIELD
+3 NAME Publisher
+3 VALUE Ancestry.com Operations, Inc.
+2 FIELD
+3 NAME PubPlace
+3 VALUE Lehi, UT, USA
+2 FIELD
+3 NAME PubDate
+3 VALUE 2014
+2 FIELD
+3 NAME Title
+3 VALUE Utah, U.S., Death and Military Death Certificates, 1904-1970
+1 REPO @R5@
+0 @S56@ SOUR
+1 ABBR Utah, U.S., Death and Military Death Certificates, 1904-1970
+1 TITL Ancestry.com, <i>Utah, U.S., Death and Military Death Certificates, 190
+2 CONC 4-1970</i> (Lehi, UT, USA: Ancestry.com Operations, Inc., 2014).
+1 _SUBQ , <I>Utah, U.S., Death and Military Death Certificates, 1904-1970</i>.
+1 _BIBL , Ancestry.com. <i>Utah, U.S., Death and Military Death Certificates, 1
+2 CONC 904-1970</i>. Lehi, UT, USA: Ancestry.com Operations, Inc., 2014.
+1 _TMPLT
+2 TID 439
+2 FIELD
+3 NAME Author
+3 VALUE Ancestry.com
+2 FIELD
+3 NAME Publisher
+3 VALUE Ancestry.com Operations, Inc.
+2 FIELD
+3 NAME PubPlace
+3 VALUE Lehi, UT, USA
+2 FIELD
+3 NAME PubDate
+3 VALUE 2014
+2 FIELD
+3 NAME Title
+3 VALUE Utah, U.S., Death and Military Death Certificates, 1904-1970
+1 REPO @R6@
+0 @S57@ SOUR
+1 ABBR Utah, U.S., Death and Military Death Certificates, 1904-1970
+1 TITL Ancestry.com, <i>Utah, U.S., Death and Military Death Certificates, 190
+2 CONC 4-1970</i> (Lehi, UT, USA: Ancestry.com Operations, Inc., 2014).
+1 _SUBQ , <I>Utah, U.S., Death and Military Death Certificates, 1904-1970</i>.
+1 _BIBL , Ancestry.com. <i>Utah, U.S., Death and Military Death Certificates, 1
+2 CONC 904-1970</i>. Lehi, UT, USA: Ancestry.com Operations, Inc., 2014.
+1 _TMPLT
+2 TID 439
+2 FIELD
+3 NAME Author
+3 VALUE Ancestry.com
+2 FIELD
+3 NAME Publisher
+3 VALUE Ancestry.com Operations, Inc.
+2 FIELD
+3 NAME PubPlace
+3 VALUE Lehi, UT, USA
+2 FIELD
+3 NAME PubDate
+3 VALUE 2014
+2 FIELD
+3 NAME Title
+3 VALUE Utah, U.S., Death and Military Death Certificates, 1904-1970
+1 REPO @R7@
+0 @S58@ SOUR
+1 ABBR U.S., Newspapers.com™ Obituary Index, 1800s-current
+1 TITL Ancestry.com, <i>U.S., Newspapers.com™ Obituary Index, 1800s-current</i
+2 CONC > (Lehi, UT, USA: Ancestry.com Operations Inc, 2019).
+1 _SUBQ , <I>U.S., Newspapers.com™ Obituary Index, 1800s-current</i>.
+1 _BIBL , Ancestry.com. <i>U.S., Newspapers.com™ Obituary Index, 1800s-current<
+2 CONC /i>. Lehi, UT, USA: Ancestry.com Operations Inc, 2019.
+1 _TMPLT
+2 TID 439
+2 FIELD
+3 NAME Author
+3 VALUE Ancestry.com
+2 FIELD
+3 NAME Publisher
+3 VALUE Ancestry.com Operations Inc
+2 FIELD
+3 NAME PubPlace
+3 VALUE Lehi, UT, USA
+2 FIELD
+3 NAME PubDate
+3 VALUE 2019
+2 FIELD
+3 NAME Title
+3 VALUE U.S., Newspapers.com™ Obituary Index, 1800s-current
+1 REPO @R8@
+0 @S59@ SOUR
+1 ABBR U.S., Find a Grave® Index, 1600s-Current
+1 TITL Ancestry.com, <i>U.S., Find a Grave® Index, 1600s-Current</i> (Lehi, UT
+2 CONC , USA: Ancestry.com Operations, Inc., 2012).
+1 _SUBQ , <I>U.S., Find a Grave® Index, 1600s-Current</i>.
+1 _BIBL , Ancestry.com. <i>U.S., Find a Grave® Index, 1600s-Current</i>. Lehi, U
+2 CONC T, USA: Ancestry.com Operations, Inc., 2012.
+1 _TMPLT
+2 TID 439
+2 FIELD
+3 NAME Author
+3 VALUE Ancestry.com
+2 FIELD
+3 NAME Publisher
+3 VALUE Ancestry.com Operations, Inc.
+2 FIELD
+3 NAME PubPlace
+3 VALUE Lehi, UT, USA
+2 FIELD
+3 NAME PubDate
+3 VALUE 2012
+2 FIELD
+3 NAME Title
+3 VALUE U.S., Find a Grave® Index, 1600s-Current
+1 REPO @R8@
 0 @R1@ REPO
 1 NAME Ancestry.com
 1 ADDR
 0 @R2@ REPO
 1 NAME www.newspapers.com
+1 ADDR
+0 @R3@ REPO
+1 NAME Ancestry.com
+1 ADDR
+0 @R4@ REPO
+1 NAME Ancestry.com
+1 ADDR
+0 @R5@ REPO
+1 NAME Ancestry.com
+1 ADDR
+0 @R6@ REPO
+1 NAME Ancestry.com
+1 ADDR
+0 @R7@ REPO
+1 NAME Ancestry.com
+1 ADDR
+0 @R8@ REPO
+1 NAME Ancestry.com
 1 ADDR
 0 _EVDEF BIRT
 1 TYPE P

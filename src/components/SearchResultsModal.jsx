@@ -69,7 +69,19 @@ function SearchResultsModal({ results, onSelectPerson, onClose }) {
                 onMouseOver={(e) => e.target.style.backgroundColor = '#d3e8ff'}
                 onMouseOut={(e) => e.target.style.backgroundColor = '#e9f5ff'}
               >
-                {person.displayName || person.name.replace(/\//g, '')?.trim() || 'Unnamed'} (Born: {person.dob || 'Unknown'})
+                {(() => {
+                    let name = person.displayName || person.name.replace(/\//g, '')?.trim() || 'Unnamed';
+                    if (person.dob && person.dob !== '?' && person.dob !== 'Unknown') {
+                        name += ` (b. ${person.dob}`;
+                        if (person.dod && person.dod !== '?' && person.dod !== 'Unknown' && person.dod !== 'Living') {
+                            name += ` - d. ${person.dod}`;
+                        }
+                        name += ')';
+                    } else if (person.dod && person.dod !== '?' && person.dod !== 'Unknown' && person.dod !== 'Living') {
+                        name += ` (d. ${person.dod})`;
+                    }
+                    return name;
+                })()}
               </button>
             </li>
           ))}
